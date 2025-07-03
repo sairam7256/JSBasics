@@ -1,4 +1,5 @@
-const {test, expect} = require('@playwright/test');
+// const {test, expect} = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 //const pageURL= "https://rahulshettyacademy.com/loginpagePractise/" ;
 test("handle multiple pages in a browser", async ({browser})=>{

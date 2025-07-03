@@ -1,5 +1,7 @@
-const {test, expect} = require('@playwright/test');
-const URLs = require('../URLs');
+// const {test, expect} = require('@playwright/test');
+// const URLs = require('../URLs');
+import { test, expect } from '@playwright/test';
+import URLs from '../URLs.js';
 
 test("First testcase", async ({browser})=>{
 

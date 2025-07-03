@@ -14,20 +14,47 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  retries: 1,
   reporter: 'html',
   timeout: 50000,
   expect:{
     timeout: 5000,
 
   },
-  use: {
+   projects : [
+    {
+      name : 'Chrome',
+      use: {
 
       browserName: 'chromium',
       headless: false,
-      screenshot : 'on',
-      trace : 'on'
+      screenshot: 'on',
+      video: 'off',
+      trace: 'on',
+      //viewport : {width:750,height : 750},
+      // ...devices['iPhone 15 Pro Max'],
+      ignoreHTTPSErrors : true ,
+      permissions : ['geolocation'],
+      
+
   },
 
+    },
+  //   {
+  //     name : 'safari',
+  //     use: {
+
+  //     browserName: 'chromium',
+  //     headless: false,
+  //     screenshot : 'on',
+  //     trace : 'on'
+  // },
+
+
+  //   }  
+   ]
+  
+  
 
   /* Run your local dev server before starting the tests */
   // webServer: {

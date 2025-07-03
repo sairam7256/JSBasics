@@ -1,4 +1,5 @@
-const {test} = require('@playwright/test');
+//const {test} = require('@playwright/test');
+import { test } from '@playwright/test';
 
 test("PalyWright specail locators", async ({page})=>{
     await page.goto("https://rahulshettyacademy.com/angularpractice/");

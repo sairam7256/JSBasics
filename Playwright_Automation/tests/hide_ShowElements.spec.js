@@ -1,6 +1,8 @@
-const {test, expect} = require('@playwright/test');
-const URLs = require('../URLs');
+// const {test, expect} = require('@playwright/test');
+// const URLs = require('../URLs');
 
+import { test, expect } from '@playwright/test';
+import URLs from '../URLs';
 test("show or hide elements test", async ({page})=>
 {
     await page.goto(URLs.HideShowURL);

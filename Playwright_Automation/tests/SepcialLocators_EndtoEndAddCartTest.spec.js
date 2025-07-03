@@ -1,6 +1,9 @@
-const {test, expect} = require('@playwright/test');
-const URLs = require('../URLs');
-const { count } = require('console');
+// const {test, expect} = require('@playwright/test');
+// const URLs = require('../URLs');
+// const { count } = require('console');
+import { test, expect } from '@playwright/test';
+import URLs from '../URLs.js';
+import { count } from 'console';
 
 test("First testcase with special locators of playwright", async ({browser})=>{
 

@@ -1,6 +1,8 @@
-var fs = require('fs');
-var fse = require('fs-extra');
-var path = require('path');
+// var fs = require('fs');
+// var fse = require('fs-extra');
+import fs from 'fs';
+//import fse from 'fs-extra';
+import  path from 'path';
 // var XLSX = require('xlsx');
 
 var {logger} = require('./logger');

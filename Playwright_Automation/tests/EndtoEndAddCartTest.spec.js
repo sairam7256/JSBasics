@@ -1,6 +1,8 @@
-const {test, expect} = require('@playwright/test');
-const URLs = require('../URLs');
-const { count } = require('console');
+import  {test, expect} from '@playwright/test';
+// const URLs = require('../URLs');
+// const { count } = require('console');
+import URLs from '../URLs';
+import { count } from 'console';
 
 test("First testcase", async ({browser})=>{
 
@@ -74,7 +76,7 @@ test("First testcase", async ({browser})=>{
 
     //checking the order id in orders page
     await page.locator("//button[@routerlink='/dashboard/myorders']").click();
-    let pagesCount =3
+    //let pagesCount =3
     // if(pagesCount>1){
     //     for(let i=1;i<=pagesCount;i++){
     //         if(await page.locator("text = "+orderId).isVisible()){

@@ -1,3 +1,4 @@
+const Person = require('./classConcept')
 console.log("Hello World")
 
 let b=9
@@ -11,4 +12,7 @@ console.log(e)
 let f ="sai"
 let g = true
 
-const c=10
+//const c=10
+
+let Employee = new Person("Arun","Raj")
+console.log(Employee.fullName())

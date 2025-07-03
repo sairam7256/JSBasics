@@ -3,7 +3,7 @@ const { only } = require('node:test');
 
 const url = "https://cigna-im--cimsit.sandbox.my.site.com/CustomLogin";
 
-test.only('First portal test', async ({page})=>{
+test('First portal test', async ({page})=>{
 
   const inputUserName = page.locator("//input[@id='okta-signin-username']");
   const inputPassword = page.locator("//input[@id='okta-signin-password']");
