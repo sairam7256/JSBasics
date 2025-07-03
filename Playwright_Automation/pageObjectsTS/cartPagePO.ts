@@ -1,5 +1,5 @@
 import { expect, Locator, Page} from '@playwright/test';
-export class CartPage {
+ class CartPage {
     page : Page;
     list : Locator;
     checkOut : Locator;
@@ -20,4 +20,4 @@ async verifyAndCheckout(productName:string)
         await this.checkOut.click();
 }
 }
-module.exports = {CartPage};
+export  {CartPage};

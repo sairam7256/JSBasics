@@ -1,6 +1,6 @@
 import { expect,Page} from '@playwright/test';
 
-export class OrderDetails {
+ class OrderDetails {
     page: Page;
 
 
@@ -25,4 +25,4 @@ export class OrderDetails {
     }
 }
 
-module.exports = {OrderDetails};
+export {OrderDetails};

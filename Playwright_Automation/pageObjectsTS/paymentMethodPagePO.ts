@@ -1,5 +1,5 @@
 import { expect, Page,Locator} from '@playwright/test';
-export class PaymentMethodPage {
+ class PaymentMethodPage {
 
     page : Page ;
     selectCountry : Locator ;
@@ -33,3 +33,4 @@ async providePaymentDetailsAndPlaceOrder(userName)
     await this.placeOrder.click();
 }
 }
+export {PaymentMethodPage};

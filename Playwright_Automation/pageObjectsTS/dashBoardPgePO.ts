@@ -1,5 +1,5 @@
 import { expect, Locator, Page} from '@playwright/test';
-export class DashBoardPage {
+class DashBoardPage {
     page : Page;
     products : Locator;
     titles : Locator;
@@ -39,4 +39,4 @@ async searchAndAddToCart(productName:string)
         await this.cartLink.click();
 }
 }
-module.exports = {DashBoardPage};
+export {DashBoardPage};

@@ -11,7 +11,7 @@ import {POManager} from '../pageObjectsTS/POManager';
 // const {OrderSuccessPage} = require ('../pageObjectsTS/orderSuccessPagePO');
 //json-> string ->js object
 //const dataset = JSON.parse(JSON.stringify(require ('../utils_TS/placeOrderDataSet.json') ))
-import rawdataset from '../utils_TS/placeOrderDataSet.json';
+import rawdataset from '../utils_TS/placeOrderDataSet.json' assert { type: 'json' };
 
 const dataset = JSON.parse(JSON.stringify(rawdataset));
 for(const data of dataset) // adding for loop fror running tests for two datasets

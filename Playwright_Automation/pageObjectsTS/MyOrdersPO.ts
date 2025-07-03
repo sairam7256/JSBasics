@@ -1,6 +1,6 @@
 import { expect, Locator, Page} from '@playwright/test';
 
-export class MyOrdersPO {
+ class MyOrdersPO {
     page :  Page;
     MyOrdersPage : Locator;
 
@@ -31,4 +31,4 @@ export class MyOrdersPO {
            
     }
 }
-module.exports = {MyOrdersPO};
+export {MyOrdersPO};

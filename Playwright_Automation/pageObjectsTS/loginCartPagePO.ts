@@ -1,7 +1,7 @@
 import { expect, Locator, Page} from '@playwright/test';
-const URLs = require('../URLs');
+import {URLs} from '../URLs.js';
 
-export class LoginPage {
+ class LoginPage {
     page : Page;
     userName : Locator ;
     password : Locator;
@@ -27,4 +27,4 @@ async goto()
     }
 }
 
-module.exports = {LoginPage};
+export {LoginPage};

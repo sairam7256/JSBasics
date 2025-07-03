@@ -7,7 +7,7 @@ import {PaymentMethodPage} from '../pageObjectsTS/paymentMethodPagePO'
 import {OrderSuccessPage} from '../pageObjectsTS/orderSuccessPagePO'
 import  {MyOrdersPO}  from '../pageObjectsTS/MyOrdersPO'
 import  {OrderDetails}  from '../pageObjectsTS/OrderDetailsPage'
-export class POManager {
+ class POManager {
     page: Page;
     loginPage: LoginPage;
     dashboard: DashBoardPage;
@@ -60,3 +60,5 @@ async getMyOrderDetails()
 
 
 }
+
+export {POManager};

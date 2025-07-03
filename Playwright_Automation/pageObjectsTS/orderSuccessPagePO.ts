@@ -1,5 +1,5 @@
 import {Page, expect, Locator} from '@playwright/test';
-export class OrderSuccessPage {
+class OrderSuccessPage {
     page: Page;
     sucessMessageThanks : Locator;
     orderID : Locator;
@@ -39,3 +39,4 @@ async verifySuccessMessageAndOrderID()
     return orderId;
 }
 }
+export {OrderSuccessPage};
